@@ -17,3 +17,15 @@ What makes this project exciting is the opportunity to work with data from such 
 The broader impact of developing a robust predictive model for Ethereum extends far beyond individual projects. A good predictive model can help investors, companies, and even our group make informed decisions by providing accurate forecasts of market trends. It can improve portfolio management strategies, enhance algorithmic trading systems, and reduce financial risks associated with the volatile nature of cryptocurrency markets. Furthermore, these models can serve as valuable tools for educating people about the complexities of blockchain technology and encouraging its responsible adoption, ultimately contributing to the growth and stability of the digital economy.
 
 In summary, working on Ethereum data is not only highly relevant and engaging but also offers the potential to contribute to real-world financial advancements and foster broader understanding and utilization of blockchain innovations.
+
+### Introduction
+
+We chose this Ethereum dataset because cryptocurrency represents a cutting-edge intersection of technology, finance, and societal change, making it highly relevant in the modern world. Ethereum, in particular, is not just a cryptocurrency but also a decentralized computing platform that enables the creation of smart contracts and decentralized applications. It has revolutionized industries such as finance, gaming, and supply chain management, offering secure, transparent, and efficient solutions to complex problems. Millions of individuals and organizations worldwide actively invest in and utilize Ethereum, making it a real-world asset with substantial economic, technological, and cultural significance.
+
+What makes this project exciting is the opportunity to work with data from such a groundbreaking domain. Predicting Ethereum's price and performance is cool because it challenges us to explore and apply advanced machine learning techniques to a volatile and dynamic market. Additionally, the insights derived from analyzing Ethereum's historical data could have practical applications, such as guiding investment decisions, improving financial risk management, and informing broader discussions about the adoption of blockchain technologies.
+Building a reliable predictive model for Ethereum can benefit many people, not just individual projects. It can help investors, companies, and even our team make smarter decisions by giving more accurate insights into market trends. These models can improve how people manage their investments, support smarter automated trading, and lower the risks tied to cryptocurrency's unpredictable nature. They can also help others learn about blockchain technology and use it responsibly, helping the digital economy grow and become more stable.
+In summary, working on Ethereum data is not only highly relevant and engaging but also offers the potential to contribute to real-world financial advancements and foster broader understanding and utilization of blockchain innovations.
+
+### Figures
+
+ ![Test Image](media/pairplot.png)
