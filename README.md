@@ -52,7 +52,10 @@ After performing our decision tree, we found that our model has the best validat
 ![model_3_1](media/model_3_1.png)
 ![model_3_2](media/model_3_2.png)
 
-Similar to our last model, we found the best min_samples_split is 5 and the min_sample_leaf is 10. Our model performed with a train accuracy of 0.794 and a test accuracy of 0.636. Despite having the best validation accuracy, the model appears to be slightly overfit on the fitting graph because we found models with closer train and test accuracies.
+We found the best min_samples_split is 30 and the min_sample_leaf is 50. Our model performed with a train accuracy of 0.70 and a test accuracy of 0.639. This model had the best validation accuracy. There are no significant signs of overfitting since the gap between the train and test accuracy is fairly small. 
+
+![model_3_3](media/model_3_3.png)
+When looking at the confusion matrix, we can see that the false negative is 13598. Now calculating the recall for the true class would is 18913/(18913+13598) which results in 58%. This is also shown in the classification report. Our recall of 58% for the true class may potentially suggest underfitting. 
 
 ## Methods
 
@@ -92,7 +95,7 @@ After implementing the decision tree regressor with randomized search cross vali
 
 ### Model 3: Decision Tree Classifier for Increase
 
-Our third model which used a decision tree classifier to predict the ‘Increase’ column was able to perform moderately well. Our best model achieved a train accuracy of 0.794, a test accuracy of 0.636, and a validation accuracy of 0.627. This indicates that we were able to correctly predict whether the price of the stock increased more often than not, although there is still room for improvement. 
+Our third model which used a decision tree classifier to predict the ‘Increase’ column was able to perform moderately well. Our best model achieved a train accuracy of 0.70, a test accuracy of 0.639, and a validation accuracy of 0.633. This indicates that we were able to correctly predict whether the price of the stock increased more often than not, although there is still room for improvement. 
 
 ## Discussion
 
@@ -112,7 +115,12 @@ Our second model, decision tree regressor, showed a test mean squared error of 1
 
 ### Model 3: Decision Tree Classifier for Increase
 
-Our third model, a decision tree classifier to predict ‘Increase’ performed with a test accuracy of 0.636. Although our model is able to perform better than guessing at random, we would hope for higher accuracy if we were to apply this to actual trading. Similar to the previous model, we found the same set of hyperparameters for our best model and could use similar method such as feature engineering, deeper hyperparameter exploration, and implement ensemble learning to improve. 
+Our third model, a decision tree classifier to predict ‘Increase’ performed with a test accuracy of 0.639. Although our model is able to perform better than guessing at random, we would hope for higher accuracy if we were to apply this to actual trading. Similar to the previous model, we found the same set of hyperparameters for our best model and could use similar method such as feature engineering, deeper hyperparameter exploration, and implement ensemble learning to improve. 
+
+### Data Leak Issue
+Our project faces a potential data leakage issue because our training data might have inforamtion overalpped with the test data. This is an issue because our training data should not include anything from our test data. We could have addressed this by creating a temporary split to avoid leakage. We could have the data from one day be training and then data from another day be test. The features we used to predict our data include 'Open', 'High', 'Low', and 'logVolume' but these features contain a leak to the close column. This is because we only know the 'High' and 'Low' values after the day the market closes. We could have addressed this by shifting the close column by one day.
+
+
 
 ## Conclusion
 
